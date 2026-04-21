@@ -1,0 +1,40 @@
+{
+  "name": "@mapbox/geojson-merge",
+  "version": "1.1.1",
+  "description": "merge multiple geojson files",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsc -p tsconfig.test.json && node dist-test/test/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mapbox/geojson-merge.git"
+  },
+  "keywords": [
+    "geojson",
+    "merge",
+    "featurecollection",
+    "typescript"
+  ],
+  "author": "Tom MacWright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/geojson-merge/issues"
+  },
+  "homepage": "https://github.com/mapbox/geojson-merge",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
